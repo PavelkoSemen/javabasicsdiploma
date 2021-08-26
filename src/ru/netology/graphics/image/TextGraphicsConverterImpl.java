@@ -62,10 +62,10 @@ public class TextGraphicsConverterImpl implements TextGraphicsConverter {
         double sizeChangeFactorWidth = 1;
         double sizeChangeFactorHeight = 1;
 
-        if (width != 0) {
+        if (width != 0 && imageWidth > width) {
             sizeChangeFactorWidth = (double) imageWidth / width;
         }
-        if (height != 0) {
+        if (height != 0 && imageHeight > height) {
             sizeChangeFactorHeight = (double) imageHeight / height;
         }
 
